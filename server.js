@@ -20,6 +20,11 @@ app.get('/notes', (req, res) =>
     res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
+// wildcard route
+app.get('*', (req, res) =>
+res.sendFile(path.join(__dirname, '/public/404.html'))
+);
+
 app.get('/api/notes', (req,res) => 
     res.sendFile(path.join(__dirname, '/db/db.json'))
 )
@@ -51,4 +56,4 @@ app.post('api/notes', (req, res) => {
     }
 });
 
-app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
+app.listen(PORT, () => console.log(`App listening on port http://localhost:${PORT}`));
