@@ -83,7 +83,7 @@ app.get('/api/notes/:note_id', (req, res) => {
     }
 })
 
-app.delete('/api/notes/:note_id', (req,res) => {
+app.delete('/api/notes/:note_id', (req,res) => {npm 
     let id = req.params.note_id;
     if (id) {
         let db = fs.readFileSync('./db/db.json');
@@ -95,7 +95,7 @@ app.delete('/api/notes/:note_id', (req,res) => {
             break;
             }
         }
-        
+
         fs.writeFile('./db/db.json', JSON.stringify(dbarray), (err) =>
         err? console.error(err): console.log('Note deleted'));
 
