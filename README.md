@@ -2,7 +2,7 @@
 
 ## Description
 
-This application is a simple note taker that uses an internal server to keep track of written notes. It contains functions to both write and delete notes, as well as viewing already written notes, the latter of which is kept read-only. This application provides a simple yet effective method of keeping track of a list of tasks that can be easily shared to others, thus reducing the need to scroll through chat logs or emails.
+This application is a simple note taker that uses an internal server to keep track of written notes. It contains functions to both write and delete notes, as well as viewing already written notes, the latter of which is kept read-only. This application provides a simple yet effective method of keeping track of a list of tasks that does not rely on local storage, thus reducing the amount of memory needed.
 
 ## Table of Contents
 
@@ -26,7 +26,9 @@ There are no usage requirements for this application. Here is a link the the wor
 
 https://note-taker-31415.herokuapp.com/
 
+Here is an image of the working application:
 
+![Completed Application](./public/assets/images/finished-webpage.png)
 
 ## Contributors
 
